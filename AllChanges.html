@@ -1,0 +1,2348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+</style>
+<title>Bewander Project -- Bateman</title>
+</head>
+<body>
+    <h2>Code Changes for Live Project</h2>
+    <h4>Made by Anthony Bateman</h4>
+    <br />
+    <br />
+    <br />
+    <br />
+    <strong>Change Set 1087 - Delete duplicate 'Add Wanderer' link from Profile Page<br /></strong>
+    <br /><textarea id="TextArea1" rows="2" cols="120">This was relatively simple -- find the &lt;li&gt tag containing the duplicate link and delete it.</textarea>
+    &nbsp; &nbsp;
+    <br />
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">ProfilePage.cshtml+1-2</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">ProfilePage.cshtml+1-2</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Users/ProfilePage.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Users/ProfilePage.cshtml</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>&nbsp; &nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;#paperbox&quot; data-toggle=&quot;modal&quot;&gt;Change Wallpaper&lt;/a&gt;&lt;/li&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>&nbsp; &nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;#paperbox&quot; data-toggle=&quot;modal&quot;&gt;Change Wallpaper&lt;/a&gt;&lt;/li&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;#profilePicBox&quot; data-toggle=&quot;modal&quot;&gt;Change Profile Pic&lt;/a&gt;&lt;/li&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;#profilePicBox&quot; data-toggle=&quot;modal&quot;&gt;Change Profile Pic&lt;/a&gt;&lt;/li&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;@Url.Action(&quot;Index&quot;, &quot;Reviews&quot;)&quot;&gt;Add Wanderers&lt;/a&gt;&lt;/li&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;@Url.Action(&quot;Index&quot;, &quot;Reviews&quot;)&quot;&gt;Add Wanderers&lt;/a&gt;&lt;/li&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;@Url.Action(&quot;EditProfile&quot;, &quot;Users&quot;)&quot;&gt;Edit my Profile&lt;/a&gt;&lt;/li&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;dropdown-item&quot; &gt;&lt;a href=&quot;@Url.Action(&quot;EditProfile&quot;, &quot;Users&quot;)&quot;&gt;Edit my Profile&lt;/a&gt;&lt;/li&gt;<span class="TextSegInsigDiff">&nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;li</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;dropdown-item&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&gt;&lt;a</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">href=&quot;@Url.Action(&quot;Index&quot;,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;Reviews&quot;)&quot;&gt;Add</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Wanderers&lt;/a&gt;&lt;/li&gt;</span></td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/ul&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/ul&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/li&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/li&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <strong> Change Set 1094 - Change the remote chat bubble background color to #e9e9e9</strong>
+    <br />
+<textarea id="TextArea1" rows="4" cols="120">The chat messages used the same class (and thus, the same CSS) for both sides of the chat, so they had the same background color. I added a new class called '.chat-partner-message', give its CSS different attribute values to set it apart from the current user's side, then associated the remote chat partner's messages with that class. </textarea>
+
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">Styles.css+27</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">Styles.css+27</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Content/Styles.css</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Content/Styles.css</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; font-size: 14px;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; font-size: 14px;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; word-wrap: break-word;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; word-wrap: break-word;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">.chat-partner-message</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">display:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">block;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">clear:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">both;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">background-color:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#E9E9E9</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!important;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">color:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#000;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">/*</span><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">#FDFDFD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">*/</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">border:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">solid</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#91D0B2</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!important;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">margin-right:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">52%</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!important;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">overflow-x:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">visible;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">margin-bottom:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!important;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">text-align:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">left;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">/*position:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">relative;*/</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">float:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">right</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!important;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">font-size:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">14px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">word-wrap:break-word;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">.date-time {</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">.date-time {</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; background-color: none;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; background-color: none;</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <strong>Change Set 1167 - Move the count of liked comments from above the thumbs up icon to just beside the time stamp. </strong>
+    <br />
+<textarea id="TextArea1" rows="6" cols="120">This turned out to be a little more complicated than it would appear from the story. The count was coming in from two different locations, and depended on the database value and the value incremented/decremented by the thumbs up button. The HTML had to be rearranged to get the initial database value where it needed to be, and to make sure that the javascript value appeared in the same location. It was also necessary to add a code for the whitespace as a simple ' ' split the count into two lines where it was supposed to be one. </textarea>
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">_Comment.cshtml+41-7</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">_Comment.cshtml+41-7</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/Post/_Comment.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/Post/_Comment.cshtml</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>min-height:3em; min-width:3em; margin-left: 10px; margin-right: 10px;&quot; src=&quot;~/Images/@comment.UserProfilePic&quot; /&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>min-height:3em; min-width:3em; margin-left: 10px; margin-right: 10px;&quot; src=&quot;~/Images/@comment.UserProfilePic&quot; /&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;comment-user-full-name&quot;&gt;@comment.UserFullName &lt;/span&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;comment-user-full-name&quot;&gt;@comment.UserFullName &lt;/span&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;comment-info comment-section&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;comment-info comment-section&quot;&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @comment.Content</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @comment.Content</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;br /&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;br /&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;br</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">/&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;<span class="TextSegSigDiff">p</span> class=&quot;time-display&quot;&gt;@dateStam<span class="TextSegSigDiff">p&lt;/</span><span class="TextSegSigDiff">p&gt;</span></td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;<span class="TextSegSigDiff">div</span> class=&quot;time-display&quot;&gt;@dateStam<span class="TextSegSigDiff">p&amp;nbsp;&amp;nbsp;&amp;nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">@{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">string</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">likeString</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;&quot;;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if(@comment.Likes.Count()==1){</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">likeString</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;Like&quot;;}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if(@comment.Likes.Count()&gt;1){</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">likeString</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;Likes&quot;;}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">@if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(comment.Likes</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">null)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;div</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;inline-block</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">comment-info</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">comment-icon</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">comment-likes&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">id=&quot;comment-likes-@comment.Id&quot;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">style=&quot;position:relative;left:36px;top:-3px;&quot;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;span</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;number-of-comment-likes&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">id=&quot;comment-likes-count-@comment.PostId-@comment.Id&quot;&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">@if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(comment.Likes.Count()</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">@comment.Likes.Count()</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}&amp;nbsp;@likeString</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;/span&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;/div&gt;</span><span class="TextSegInsigDiff">&nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span><span class="TextSegInsigDiff">&nbsp;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;/div&gt;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.Likes != null)</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.Likes != null)</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;inline-block comment-info comment-icon comment-likes&quot; id=&quot;comment-likes-@comment.Id&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;inline-block comment-info comment-icon comment-likes&quot; id=&quot;comment-likes-@comment.Id&quot;&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;number-of-comment-likes&quot; id=&quot;comment-likes-count-@comment.PostId-@comment.Id&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;number-of-comment-likes&quot; id=&quot;comment-likes-count-@comment.PostId-@comment.Id&quot;&gt;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="TextSegInsigDiff">&nbsp; </span>@if (comment.Likes.Count() != 0)</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @<span class="TextSegSigDiff">*</span><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">@</span>if (comment.Likes.Count() != 0)</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @comment.Likes.Count()</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @comment.Likes.Count()</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">*@</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/span&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/span&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.CurrentUserLiked == true)</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.CurrentUserLiked == true)</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.Likes != null)</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.Likes != null)</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;inline-block comment-info comment-icon comment-likes&quot; id=&quot;comment-likes-@comment.Id&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;inline-block comment-info comment-icon comment-likes&quot; id=&quot;comment-likes-@comment.Id&quot;&gt;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;number-of-comment-likes&quot; id=&quot;comment-likes-count-@comment.PostId-@comment.Id&quot;&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;number-of-comment-likes&quot; id=&quot;comment-likes-count-@comment.PostId-@comment.Id&quot;&gt;<span class="TextSegSigDiff"></span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.Likes.Count() != 0)</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.Likes.Count() != 0)</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @comment.Likes.Count()</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @comment.Likes.Count()</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/span&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/span&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.CurrentUserLiked == true)</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (comment.CurrentUserLiked == true)</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span>&lt;span class=&quot;unlike-post&quot; id=&quot;comment-like-@comment.PostId-@comment.Id&quot; onclick=&quot;HandleLikeComment('@comment.PostId', '@comment.Id')&quot;&gt;&lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &lt;<span class="TextSegSigDiff">!--</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&lt;</span>span class=&quot;unlike-post&quot; id=&quot;comment-like-@comment.PostId-@comment.Id&quot; onclick=&quot;HandleLikeComment('@comment.PostId', '@comment.Id')&quot;&gt;&lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span<span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">--</span>&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">else</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">else</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">{</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">{</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span>&lt;span class=&quot;like-post&quot; id=&quot;comment-like-@comment.PostId-@comment.Id&quot; onclick=&quot;HandleLikeComment('@comment.PostId','@comment.Id')&quot;&gt;&lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &lt;<span class="TextSegSigDiff">!--</span><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">&lt;</span>span class=&quot;like-post&quot; id=&quot;comment-like-@comment.PostId-@comment.Id&quot; onclick=&quot;HandleLikeComment('@comment.PostId','@comment.Id')&quot;&gt;&lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span<span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">--</span>&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; var $likesCount = $('#comment-likes-count-'+postId+'-'+commentId);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; var $likesCount = $('#comment-likes-count-'+postId+'-'+commentId);</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if(data.NumberOfLikes &amp;&amp; data.NumberOfLikes &gt; 0) {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if(data.NumberOfLikes &amp;&amp; data.NumberOfLikes &gt; 0) {</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">$</span><span class="TextSegInsigDiff">l</span>ike<span class="TextSegSigDiff">sCount.t</span>ext(data.NumberOfLikes);</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">var</span><span class="TextSegInsigDiff"> </span><span class="TextSegInsigDiff">L</span>ike<span class="TextSegSigDiff">T</span>ext<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">String</span>(data.NumberOfLikes);</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">var</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">likey</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;\xa0Like&quot;;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if(data.NumberOfLikes&gt;1)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">likey</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;\xa0Likes&quot;;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">$likesCount.text(LikeText.concat(likey)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">);</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; } else {</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; } else {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; $likesCount.text('');</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; $likesCount.text('');</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <strong> Change Set 1133 - Review User-type radio buttons not working and Selected Order dropdown also not working. </strong><br />
+<textarea id="TextArea1" rows="8" cols="120">This was a little convoluted. This is actually the combination of two different stories. Initially, the radio button that filtered reviews based on whether the reviewer was a local, or a visitor, or both, was not working, and this formed the first story. However, my investigation showed that the dropdown that ordered the reviews by age, or rating also did not work and needed to be fixed first. This indicated to me that there was probably a break in the AJAX function. But first, I needed to find out why I was only getting one review out of several. This turned out to be a misplaced return statement inside the foreach instead of after. Next, I found that the wrong ID value was used in calling the GET, and finally I added a statement to check for changes to the radio button and call the reloadsummary function.  </textarea>
+    <br />
+
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">ReviewsController.cs+1-2</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">ReviewsController.cs+1-2</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Controllers/ReviewsController.cs</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Controllers/ReviewsController.cs</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSame">&nbsp;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span>&nbsp; &nbsp; &nbsp; &nbsp; List&lt;ReviewViewModel&gt; formattedReviews = new List&lt;ReviewViewModel&gt;();</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>&nbsp; &nbsp; &nbsp; &nbsp; List&lt;ReviewViewModel&gt; formattedReviews = new List&lt;ReviewViewModel&gt;();</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="TextSegInsigDiff">&nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; foreach (Review review in reviews)</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; foreach (Review review in reviews)</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; User user = db.Users.Find(review.UserID);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; User user = db.Users.Find(review.UserID);</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; formattedReviews.Add(reviewViewModel);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; formattedReviews.Add(reviewViewModel);</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="TextSegInsigDiff">&nbsp; </span>return PartialView(&quot;DisplayReviews/_Summary&quot;, <span class="TextSegSigDiff">us</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">rType</span>);</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff">&nbsp; </span>return PartialView(&quot;DisplayReviews/_Summary&quot;, <span class="TextSegSigDiff">formattedReviews</span>);<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">This</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">line</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">doesn't</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">belong</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">here.</span></td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>&nbsp; &nbsp; switch (selected)</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>&nbsp; &nbsp; switch (selected)</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">PlaceViewModel.cs+13-1</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">PlaceViewModel.cs+13-1</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/ViewModels/PlaceViewModel.cs</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/ViewModels/PlaceViewModel.cs</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSame">&nbsp;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; public PlaceViewModel(PlaceObject model)</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; public PlaceViewModel(PlaceObject model)</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; PlaceID = model.Result.PlaceID;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">var</span><span class="TextSegInsigDiff"> </span>PlaceID = model.Result.PlaceID;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Name = model.Result.Name;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Name = model.Result.Name;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; FormattedAddress = model.Result.FormattedAddress;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; FormattedAddress = model.Result.FormattedAddress;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Lat = model.Result.Geometry.Location.Lat;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Lat = model.Result.Geometry.Location.Lat;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; }<span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>// Functions</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>// Functions<span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>PlaceObject jsonObject = JsonConvert.DeserializeObject&lt;PlaceObject&gt;(result);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>PlaceObject jsonObject = JsonConvert.DeserializeObject&lt;PlaceObject&gt;(result);</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>PlaceViewModel placeViewModel = new PlaceViewModel(jsonObject);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>PlaceViewModel placeViewModel = new PlaceViewModel(jsonObject);</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff"> </span><span class="TextSegInsigDiff"> </span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span>placeViewModel;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if(placeViewModel.PlaceID</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">null)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span><span class="TextSegInsigDiff"> </span>placeViewModel<span class="TextSegSigDiff">.PlaceID</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">placeID</span>;<span class="TextSegInsigDiff">&nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span></td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">placeViewModel;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSigMod">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">DisplayReviews.cshtml+6-4</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">DisplayReviews.cshtml+6-4</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Reviews/DisplayReviews.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Reviews/DisplayReviews.cshtml</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">@model Bewander.Models.Place</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">@model Bewander.Models.Place</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">@{</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">@{</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; ViewBag.Title = Model.Name.ToString() + &quot;Reviews&quot;;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; ViewBag.Title = Model.Name.ToString() + &quot;Reviews&quot;;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; var sortList = new List&lt;SelectListItem&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; var sortList = new List&lt;SelectListItem&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.RadioButton(&quot;userType&quot;, &quot;local&quot;) @:Local</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.RadioButton(&quot;userType&quot;, &quot;local&quot;) @:Local</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.RadioButton(&quot;userType&quot;, &quot;traveler&quot;) @:Traveler</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.RadioButton(&quot;userType&quot;, &quot;traveler&quot;) @:Traveler</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.RadioButton(&quot;userType&quot;, &quot;both&quot;, true) @:Both</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.RadioButton(&quot;userType&quot;, &quot;both&quot;, true) @:Both</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/nav&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/nav&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;section id=&quot;reviewSum&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;section id=&quot;reviewSum&quot;&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @{</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @{</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string selected = sortList.Where(x =&gt; x.Selected == true).FirstOrDefault().Value;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string selected = sortList.Where(x =&gt; x.Selected == true).FirstOrDefault().Value;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string userType = <span class="TextSegSigDiff">selected</span>;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string userType = <span class="TextSegSigDiff">&quot;bo</span><span class="TextSegSigDiff">th&quot;</span>;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Html.RenderAction(&quot;_Summary&quot;, &quot;Reviews&quot;, new { Model.PlaceID, selected, userType });</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Html.RenderAction(&quot;_Summary&quot;, &quot;Reviews&quot;, new { Model.PlaceID, selected, userType });</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/section&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/section&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&lt;script&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&lt;script&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; function reloadSummary() {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; function reloadSummary() {</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span>var selectedOrder = document.getElementById(&quot;s<span class="TextSegSigDiff">ortOrd</span><span class="TextSegSigDiff">er</span>&quot;).val<span class="TextSegSigDiff">()</span>;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; var selectedOrder = document.getElementById(&quot;<span class="TextSegSigDiff">mo</span>s<span class="TextSegSigDiff">t-recent</span>&quot;).val<span class="TextSegSigDiff">ue</span>;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span>var selectedUserType = $('input[name=userType]:checked').val();</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp; var selectedUserType = $('input[name=userType]:checked').val();</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; $.ajax({</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; $.ajax({</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; type: &quot;GET&quot;,</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; type: &quot;GET&quot;,</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; });</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; });<span class="TextSegInsigDiff">&nbsp;</span></td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; }</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp;&nbsp; $(&quot;#s<span class="TextSegSigDiff">ortOrd</span><span class="TextSegSigDiff">er</span>&quot;).change(function () { reloadSummary() });</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp;&nbsp; $(&quot;#<span class="TextSegSigDiff">mo</span>s<span class="TextSegSigDiff">t-recent</span>&quot;).change(function () { reloadSummary() });</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; $('input[name=userType]').change(function () { reloadSummary() });</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; $('input[name=userType]').change(function () { reloadSummary() });</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">&lt;/</span><span class="TextSegSigDiff">scri</span><span class="TextSegSigDiff">p</span><span class="TextSegSigDiff">t&gt;</span></td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">$(&quot;.userType&quot;).change(function</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">()</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">reloadSummary()</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">});</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">@*@foreach</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(va</span>r<span class="TextSegInsigDiff"> </span>i<span class="TextSegSigDiff">tem</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">in</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Model)</span></td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">&lt;/s</span><span class="TextSegSigDiff">c</span>ri<span class="TextSegSigDiff">pt&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">@*@foreach</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(var</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">item</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">in</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Model)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <strong> Change Set 1077 - Change the background color of the travelogue datestamp to #eee to make it standout from the rest of the post </strong><br />
+<textarea id="TextArea1" rows="6" cols="120">Initially I tried to affect the background of the div element that contained the date alone. This gave me the unacceptable appearance of just coloring the background of the characters in the date. I decided that my best course would be to add a new class to the container surrounding the date, change the background color of the div that contained both the date and the icons to #eee, then change the color of the div containing just the icons back to the almost white color from before. See image below for final result. </textarea>
+
+    <br /><div style="float:left">
+        <img src="travelogueDate.png" alt="" />
+        <br /><br />
+    </div>
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">_Newsfeed.cshtml+3-1</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">_Newsfeed.cshtml+3-1</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_Newsfeed.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_Newsfeed.cshtml</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;card-footer text-muted&quot;&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;card-footer text-muted<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">travelogue-date-container</span>&quot;&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;div</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">style=&quot;width:100%&quot;&gt;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;date-travelogue-info&quot;&gt;&nbsp;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;date-travelogue-info&quot;&gt;&nbsp;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @item.DatePosted&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @item.DatePosted&nbsp;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;/div&gt;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;post-interactions-container&quot;&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;post-interactions-container&quot;&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.Action(&quot;_PostInteractions&quot;, &quot;Posts&quot;, new { postID = item.PostID })</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @Html.Action(&quot;_PostInteractions&quot;, &quot;Posts&quot;, new { postID = item.PostID })</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">travelogue.css+4</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">travelogue.css+4</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Content/travelogue.css</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Content/travelogue.css</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp; border-top: 1px solid #d1d1d1;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp;<span class="TextSegInsigDiff">&nbsp; </span>border-top: 1px solid #d1d1d1;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp; border-bottom: none;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp;<span class="TextSegInsigDiff">&nbsp; </span>border-bottom: none;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp; padding-top: 5px;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp;<span class="TextSegInsigDiff">&nbsp; </span>padding-top: 5px;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">background-color:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#fffef9;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">.post-interactions-container .newsfeed-item-interactions {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">.post-interactions-container .newsfeed-item-interactions {</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemInsigMod">&nbsp; font-weight: bold;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp;<span class="TextSegInsigDiff">&nbsp; </span>font-weight: bold;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">.travelogue-date-container</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">background-color:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#eee;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">/*style the names below images in the suggested wanderers section*/</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">/*style the names below images in the suggested wanderers section*/</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">.name-label {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">.name-label {</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <strong> Change Set 1088 -  Fix broken image link. In the case the user uses the default avatar, make sure the default avatar is displayed instead of a broken link.</strong><br />
+<textarea id="TextArea1" rows="2" cols="120">This was another easy one. It turned out that all that was needed was to finish the path by placing "../Images/" before the image name. </textarea>
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">MessageNotificationViewModel.cs+1-1</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">MessageNotificationViewModel.cs+1-1</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">$/Bewander/Bewander/ViewModels/MessageNotificationViewModel.cs</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/ViewModels/MessageNotificationViewModel.cs</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; public string getProfilePic(Message message) {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; public string getProfilePic(Message message) {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; User user = db.Users.SqlQuery(&quot;dbo.User_Select @p0&quot;, message.UserID).SingleOrDefault();</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; User user = db.Users.SqlQuery(&quot;dbo.User_Select @p0&quot;, message.UserID).SingleOrDefault();</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Image profilePicture = Image.GetProfileImages(user.UserID, FileType.ProfilePicture);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Image profilePicture = Image.GetProfileImages(user.UserID, FileType.ProfilePicture);</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string profilePic = (profilePicture.Path != &quot;no-image.png&quot;) ? &quot;../Images/&quot; + user.UserID + &quot;/&quot; + profilePicture.Path : profilePicture.Path;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string profilePic = (profilePicture.Path != &quot;no-image.png&quot;) ? &quot;../Images/&quot; + user.UserID + &quot;/&quot; + profilePicture.Path : <span class="TextSegSigDiff">&quot;../Images/&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">+</span><span class="TextSegInsigDiff"> </span>profilePicture.Path;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; return profilePic;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; return profilePic;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; }</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <strong> Change Set 1133 -  </strong><br />
+<textarea id="TextArea1" rows="6" cols="120">This was pretty simple. All  </textarea>
+    Left file: C:\Users\tmbat\Desktop\bewanderstories\textversions\changeset1094_bubbleposition_before_2.txt &nbsp;
+    <br />
+    Right file: C:\Users\tmbat\Desktop\bewanderstories\textversions\changeset1094_bubbleposition_after_2.txt &nbsp;
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">_ChatBox.cshtml+14-2</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">_ChatBox.cshtml+14-2</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_ChatBox.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_ChatBox.cshtml</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string timeStamp = message.TimeStamp(message.DateTime);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; string timeStamp = message.TimeStamp(message.DateTime);</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if (message.UserID == User.Identity.GetUserId())</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if (message.UserID == User.Identity.GetUserId())</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;current-user-message&quot;&gt;@message.Content&lt;/li&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li class=&quot;current-user-message&quot;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">style=&quot;width:50%&quot;</span><span class="TextSegInsigDiff"> </span>&gt;@message.Content&lt;/li&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if (timeStamp.Contains(&quot;ago&quot;))</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if (timeStamp.Contains(&quot;ago&quot;))</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // Check for more than 1 hour.</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // Check for more than 1 hour.</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; else</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; else</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li <span class="TextSegSigDiff">s</span><span class="TextSegSigDiff">t</span>yle=&quot;width:<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">auto</span>;&quot;&gt; @message.Content &lt;/li&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;li <span class="TextSegSigDiff">class=&quot;chat-partner-message&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">st</span>yle=&quot;width:<span class="TextSegSigDiff">45%</span>;&quot;&gt; @message.Content &lt;/li&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(timeStamp.Contains(&quot;ago&quot;))</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Check</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">for</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">more</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">than</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">hour.</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(timeStamp.Contains(&quot;hr&quot;))</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;li</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;date-time-chat-message&quot;&gt;Over</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">@timeStamp&lt;/li&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(timeStamp.Contains(&quot;ago&quot;)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&amp;&amp;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">!timeStamp.Contains(&quot;hr&quot;))</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;li</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;date-time-chat-message&quot;&gt;@timeStamp&lt;/li&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <strong> Change Set 1133 -  </strong><br />
+<textarea id="TextArea1" rows="6" cols="120">This was pretty simple. All  </textarea>
+    Left file: C:\Users\tmbat\Desktop\bewanderstories\textversions\changeset1106_1st_message_bubble_Before.txt &nbsp;
+    <br />
+    Right file: C:\Users\tmbat\Desktop\bewanderstories\textversions\changeset1106_1st_message_bubble_after.txt &nbsp;
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">navbar.css+18</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">navbar.css+18</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">$/Bewander/Bewander/Content/navbar.css</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Content/navbar.css</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp; margin-bottom: 5px;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp; margin-bottom: 5px;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">.message-content {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">.message-content {</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">-webkit-border-radius:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">8px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">-moz-border-radius:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">8px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">-webkit-box-shadow:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">4px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#888;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">-moz-box-shadow:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">4px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#888;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp; margin-bottom: 10px;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp;<span class="TextSegInsigDiff">&nbsp; </span>margin-bottom: 10px;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">height:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">auto;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-left:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">10px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-bottom:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">40px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-top:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">10px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-right:15px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">border:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">solid</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">lightgray;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">border-radius:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">8px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">float:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">left;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">position:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">relative;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">box-shadow:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">4px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#888;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">overflow:hidden;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">.notifications-dropdown-header {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">.notifications-dropdown-header {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp; margin-bottom: 0 !important;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp; margin-bottom: 0 !important;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+
+    <strong> Change Set 1142 - change the color of the 'x' (close) button in the post_interaction modal to be #b0c6bb. </strong><br />
+<textarea id="TextArea1" rows="4" cols="120">At first, just changing the color and the opacity to 1 in the CSS worked just fine (although because the parent was controlling the opacity, it was necessary to overrule it with !important). However, after getting the latest version the next day, this was back to where it was before. After failing to discover what had changed in the build set, I resorted to making it an inline style. </textarea>
+
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">_PostInteraction.cshtml+1-1</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">_PostInteraction.cshtml+1-1</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/Post/_PostInteraction.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/Post/_PostInteraction.cshtml</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span>&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Modal content--&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Modal content--&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-content&quot; id=&quot;flag-form&quot;&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-content&quot; id=&quot;flag-form&quot;&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-header&quot; id=&quot;flag-header&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-header&quot; id=&quot;flag-header&quot;&gt;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;button type=&quot;button&quot; class=&quot;close&quot; <span class="TextSegSigDiff">style=&quot;color:#b0c6bb;opacity:.80;&quot;</span><span class="TextSegInsigDiff"> </span>data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;h4 class=&quot;modal-title&quot; id=&quot;flag-title&quot;&gt;What's the matter?&lt;/h4&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;h4 class=&quot;modal-title&quot; id=&quot;flag-title&quot;&gt;What's the matter?&lt;/h4&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-body&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-body&quot;&gt;</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <strong>Change Set 1143 - Add some space between the radio button itself and the associated text.</strong> <br />
+<textarea id="TextArea1" rows="2" cols="120">This was pretty simple. All that needed to be done was to add two non-breaking whitespace codes between the two parts of the radio button controls on the flag modal.  </textarea>
+    <br />
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">_PostInteraction.cshtml+3-3</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">_PostInteraction.cshtml+3-3</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/Post/_PostInteraction.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/Post/_PostInteraction.cshtml</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;form action=&quot;&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;form action=&quot;&quot;&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;text&quot; name=&quot;PostID&quot; value=&quot;@(Model.PostID)&quot; style=&quot;display:none&quot; /&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;text&quot; name=&quot;PostID&quot; value=&quot;@(Model.PostID)&quot; style=&quot;display:none&quot; /&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;flagValue&quot; value=&quot;1&quot;&gt;This is offensive.&lt;br&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;flagValue&quot; value=&quot;1&quot;&gt;<span class="TextSegSigDiff">&amp;nbsp;&amp;nbsp;</span>This is offensive.&lt;br&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;flagValue&quot; value=&quot;2&quot;&gt;This is spam.&lt;br&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;flagValue&quot; value=&quot;2&quot;&gt;<span class="TextSegSigDiff">&amp;nbsp;&amp;nbsp;</span>This is spam.&lt;br&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;flagValue&quot; value=&quot;3&quot;&gt;Other</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;input type=&quot;radio&quot; name=&quot;flagValue&quot; value=&quot;3&quot;&gt;<span class="TextSegSigDiff">&amp;nbsp;&amp;nbsp;</span>Other</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/form&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/form&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-footer&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;modal-footer&quot;&gt;</td>
+        </tr>
+    </table>
+    <br />  <br />  <br />  <br />
+    <strong> Change Set 1160 - Alter the new message modal timestamp format to show 'hours ago' for less than 24 hour old message, 'days ago' for message less than or equal to two days old, and date for any message older than those.</strong> <br />
+<textarea id="TextArea1" rows="6" cols="120">Instead of adding the logic needed into the MessageNav.cshtml file (where the existing formatting was handled), I found a method where a similar date formatting was handled in the Message.cs file. I created a new method based on that (basically a copy). I couldn't use the original method because the message age tests were based on different values. I changed the test values to fit the story acceptance test, and hid the formatting code used in the cshtml file. I checked the behavior by creating a new message and setting my system clock backward and forward to simulate the passage of time.  </textarea>
+    <br />
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">Message.cs+31</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">Message.cs+31</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">$/Bewander/Bewander/Models/Message.cs</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Models/Message.cs</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; return (datePosted);</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; return (datePosted);</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">public</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">string</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">TimeStampAlert(DateTime</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">postDate)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">TimeSpan</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DateTime.Now</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">-</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">postDate;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">string</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">datePosted</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;Just</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">now&quot;;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(span.Days</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">String.Format(&quot;{0:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">MMM</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">d,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">yyyy}&quot;,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">postDate);</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Jan</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1992</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">else</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(span.Days</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&amp;&amp;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Days</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&lt;=2)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">String.Format(&quot;{0}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{1}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">ago&quot;,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Days,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Days</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">?</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;day&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;days&quot;);</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">day</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">days</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">else</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(span.Hours</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&lt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">24</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&amp;&amp;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Hours</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&gt;1)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">String.Format(&quot;{0}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{1}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">ago&quot;,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Hours,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Hours</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">?</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;hour&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;hours&quot;);</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">hr</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">hrs</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">else</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(span.Minutes</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">String.Format(&quot;{0}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{1}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">ago&quot;,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Minutes,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Minutes</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">?</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;minute&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;minutes&quot;);</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">min</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">mins</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">else</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">if</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(span.Seconds</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">3)</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">String.Format(&quot;{0}</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{1}&quot;,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Seconds,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">span.Seconds</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">==</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">?</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;second&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;seconds&quot;);</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">//</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">second</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">seconds</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">return</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(datePosted);</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; }</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">}</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">}</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemInsigMod">&nbsp;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">_MessagesNav.cshtml+14</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">_MessagesNav.cshtml+14</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_MessagesNav.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_MessagesNav.cshtml</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemInsigMod">&nbsp;<span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>&lt;p class=&quot;text-left text-limit&quot; style=&quot;padding-top: 3px; padding-bottom: 3px&quot;&gt;@item.Content &lt;/p&gt;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod">&nbsp;&lt;p class=&quot;text-left text-limit&quot; style=&quot;padding-top: 3px; padding-bottom: 3px&quot;&gt;@item.Content &lt;/p&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span>&lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">@*</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (@item.DateTime.Day == DateTime.Today.Day)</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @if (@item.DateTime.Day == DateTime.Today.Day)</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">//Old</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">Timestamp</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">display</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; String time = @item.DateTime.ToString(&quot;hh:mm tt&quot;);</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; String time = @item.DateTime.ToString(&quot;hh:mm tt&quot;);</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;row&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;row&quot;&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;message-time-chatbox&quot;&gt;@time&lt;/span&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;message-time-chatbox&quot;&gt;@time&lt;/span&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;row&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;row&quot;&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;message-time-chatbox&quot;&gt;@time&lt;/span&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;span class=&quot;message-time-chatbox&quot;&gt;@time&lt;/span&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">}*@</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">@{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">//New</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">timestamp</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">display</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">string</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">time</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">@item.TimeStampAlert(@item.DateTime);</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;div</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;row&quot;&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;span</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;message-time-chatbox&quot;&gt;@time&lt;/span&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;/div&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>}</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span>}</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <strong> Change Set 1120 - Add a speech bubble border to the new message </strong><br />
+    <textarea id="TextArea1" rows="7" cols="120">See images below. The intitial story was to simply add a border with rounded edges to the message. This was later changed to a 'speech' bubble (a bubble with a little triangle or spur to make it look like a modern app chat). A fellow student pointed me toward a website that discussed making these types of bubbles using CSS, which seemed clearly the way to go. After much research, I found a speech bubble example and adapted the code to our situation by experimenting with the values to rotate the spike to point at the message sender's icon. See the following images below the code changes for a progression of start to finish. It was adapted from code posted by 'ajahb5p1' on jsfiddle  </textarea>
+
+<br/><br/>
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">_MessagesNav.cshtml+5-2</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">_MessagesNav.cshtml+5-2</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_MessagesNav.cshtml</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Views/Shared/_MessagesNav.cshtml</td>
+        </tr>
+        <tr class="SectionAll">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/p&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/p&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; }</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;div&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;div</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">class=&quot;left-bubble&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">style=&quot;float:left&quot;&gt;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSigMod">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-left text-limit <span class="TextSegSigDiff">m</span><span class="TextSegSigDiff">ess</span><span class="TextSegSigDiff">a</span><span class="TextSegSigDiff">ge-content</span>&quot;&gt;@item.Content &lt;/p&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-left text-limit<span class="TextSegSigDiff">&quot;</span> <span class="TextSegSigDiff">style=&quot;padding</span><span class="TextSegSigDiff">-bo</span><span class="TextSegSigDiff">t</span><span class="TextSegSigDiff">tom:40px</span>&quot;&gt;@item.Content &lt;/p&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;/div&gt;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">&lt;/div&gt;</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;/div&gt;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;col-sm-3&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;col-sm-3&quot;&gt;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;friend-btn-container search-result-name&quot;&gt;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;div class=&quot;friend-btn-container search-result-name&quot;&gt;</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table class="fc" cellspacing="0" cellpadding="0">
+        <tr class="SectionBegin">
+            <td class="TextItemSame">navbar.css+44</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">navbar.css+44</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">$/Bewander/Bewander/Content/navbar.css</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">$/Bewander/Bewander/Content/navbar.css</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&lt;&gt;</td>
+            <td class="TextItemInsigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp;&nbsp;&nbsp; padding: 10px 0;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff">&nbsp; &nbsp; </span>padding: 10px 0;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp;&nbsp;&nbsp; text-align: center;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff">&nbsp; &nbsp; </span>text-align: center;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemInsigMod">&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemInsigMod">&nbsp;&nbsp;<span class="TextSegInsigDiff">&nbsp; </span>}</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp; .navbar-nav .open .dropdown-menu {</td>
+            <td class="AlignCenter">=</td>
+            <td class="TextItemSame">&nbsp; .navbar-nav .open .dropdown-menu {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; background-color: #fff !important;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; background-color: #fff !important;</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp; #navbar-friend-list {</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp; #navbar-friend-list {</td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; width: 100%;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp;&nbsp;&nbsp; width: 100%;</td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp; }</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSame">&nbsp; }</td>
+        </tr>
+        <tr class="SectionBegin">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">-+</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">/*</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">The</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">following</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">styling</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">creates</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">a</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">speech</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">bubble</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">with</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">the</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">arrow</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">to</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">the</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">left*/</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">/*</span><span class="TextSegInsigDiff">&nbsp; </span><span class="TextSegSigDiff">It</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">was</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">adapted</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">from</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">code</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">posted</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">by</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">'ajahb5p1'</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">on</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">jsfiddle</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">*/</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">.left-bubble</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">position:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">relative;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">background-color:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#FFFFFF;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">border:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">solid</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">lightgray;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">max-width:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">250px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">margin-bottom:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">10px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">height:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">auto;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-left:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">10px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-bottom:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">15px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-top:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">10px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">padding-right:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">15px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">font-family:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">arial;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">margin:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">auto;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">font-size:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">14px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">border-radius:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">8px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">box-shadow:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">4px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">#888;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">.left-bubble:after,</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">.left-bubble:before</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">right:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">100%;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">top:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">50%;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">border:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">solid</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">transparent;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">content:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">height:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">width:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">position:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">absolute;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">pointer-events:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">none;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">.left-bubble:after</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">border-color:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">transparent</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">white</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">transparent</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">transparent;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">border-width:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">3px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">19px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">12px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">15px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">margin-top:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">-22px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">.left-bubble:before</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">border-color:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">transparent</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">lightgray</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">transparent</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">transparent;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">border-width:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">5px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">22px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">14px</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">17px;</span></td>
+        </tr>
+        <tr class="SectionMiddle">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">margin-top:</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">-24px;</span></td>
+        </tr>
+        <tr class="SectionEnd">
+            <td class="TextItemSame">&nbsp;</td>
+            <td class="AlignCenter">&nbsp;</td>
+            <td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp;&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+        </tr>
+    </table>
+    <br />
+
+    <img src="messageBubble.png" alt="The evolution of the new message speech bubble." />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
